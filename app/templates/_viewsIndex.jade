@@ -1,0 +1,7 @@
+extends layout
+
+block content<% if (bootstrap) {print('\n\t.main.container');} %>
+	<% if (bootstrap) {print('\t');} %>h1 <%= appName %>
+	<% if (bootstrap) {print('\t');} %>h2 <%= npmDescription %>
+	<% if (bootstrap) {print('\t');} %><br />
+	<% if (bootstrap) {print('\t');} %>h3 Created by <%= authorName %>

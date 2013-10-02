@@ -1,0 +1,18 @@
+doctype 5
+html<% if (modernizr) {print(".no-js");} %>
+	head
+		title= title
+		meta(name='viewport', content="width=device-width, initial-scale=1.0")
+		link(rel='stylesheet', href='/stylesheets/style.css')<% if (jquery || bootstrap) { print("\n\t\tscript(src='/javascripts/jquery/jquery.js')"); } %><% if (bootstrap) { print("\n\t\tscript(src='/javascripts/bootstrap/bootstrap.js')"); } %><% if (modernizr) { print("\n\t\tscript(src='/javascripts/modernizr/modernizr.js')"); } %>
+
+	body
+		#wrap
+			block content
+			#push
+
+		footer
+			p<% if (bootstrap) {print(".text-muted.text-center");} %>
+				- var date = new Date, date = date.getFullYear();
+				| &copy; #{date} <%= appName %>, all rights reserved. Site created by <%= authorName %>
+
+		<% if (mainJS) {print("script(src='/javascripts/main.js')");} %>

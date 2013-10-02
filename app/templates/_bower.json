@@ -1,0 +1,8 @@
+{
+  "name": "<%= _.slugify(appName) %>",
+  "version": "0.0.1",
+  "dependencies": {
+    <% _.forEach(bowerDepends, function(version, name) { %>"<%= name %>": "<%= version %>"<% bowerDepCnt += 1; var end = ''; if (bowerDepCnt < _.size(bowerDepends)) {end = ",\n    ";} %><%= end %><% }); %>
+  }
+}
+

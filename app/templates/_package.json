@@ -1,0 +1,19 @@
+{
+  "name" : "<%= _.slugify(appName) %>",
+  "version" : "0.0.1",
+  "private" : <%= npmPrivate %>,
+  "scripts" : {
+	"start" : "node app.js"
+  },
+  "dependencies": {
+  	"express" : ">=3.3.4",
+  	"jade" : "*",
+  	"less-middleware" : "*",
+    "merge": "*"
+  },
+  "author" : {
+  	"name" : "<%= authorName %>",
+  	"email" : "<%= authorEmail %>"
+  },
+  "description" : "<%= npmDescription %>"
+}

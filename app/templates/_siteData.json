@@ -1,0 +1,8 @@
+{
+  "globalData": {
+    "title": "<%= appName %>"
+  },
+  "pageData": {
+    "index": {}
+  }
+}

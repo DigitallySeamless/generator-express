@@ -1,0 +1,29 @@
+html, body {
+	margin: 0;
+	padding: 0px;
+}
+
+// Main Content<% if (bootstrap) { print("\n.main.container {\n	margin-top: 40px;\n}"); } else { print("\n#wrap {\n    margin: 0 10px;\n    max-width: 1600px;\n}"); } %>
+
+// Sticky Footer
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px;
+}
+
+#push, footer {
+	height: <% if (bootstrap) { print("80"); } else { print("40"); } %>px;
+}
+
+footer {
+	margin-top: 40px;
+	padding: 32px 0px;
+	background: #f0f0f0;
+}
+// End Sticky Footer
