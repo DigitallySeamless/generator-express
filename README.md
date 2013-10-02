@@ -26,7 +26,7 @@ Yeoman travels light. He didn't pack any generators when he moved in. You can th
 To install generator-express from npm, run:
 
 ```
-$ npm install -g generator-express
+$ npm install -g git://github.com/DigitallySeamless/generator-express.git
 ```
 
 Finally, initiate the generator:
